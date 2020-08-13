@@ -28,3 +28,9 @@ sudo apt-get install -y docker-compose
 
 sudo usermod -aG docker ansible
 sudo usermod -aG docker adecewas
+
+
+
+# Tache
+
+ -icon "%USERPROFILE%\AppData\Local\lxss\bash.ico"
