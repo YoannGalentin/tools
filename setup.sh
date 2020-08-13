@@ -2,6 +2,11 @@
 #
 # setup.sh: run the workstation setup on Ubuntu's WSL
 
+sudo apt install zsh
+sudo apt-get install powerline fonts-powerline
+
+
+
 echo
 echo "git install"
 echo
