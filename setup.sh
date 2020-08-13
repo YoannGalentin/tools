@@ -2,13 +2,35 @@
 #
 # setup.sh: run the workstation setup on Ubuntu's WSL
 
-# ZSH
-sudo apt-get install zsh
+echo
+echo "git install"
+echo
 sudo apt-get install git
+
+# ZSH
+echo
+echo "ZSH install"
+echo
+sudo apt-get install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+# using dircolors.ansi-dark
+# curl https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.ansi-dark --output ~/.dircolors
+
+
+echo
+echo "Jenv install"
+echo
+echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(jenv init -)"' >> ~/.zshrc
 
 source /home/yoyo/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+echo ""
+## set colors for LS_COLORS
+eval `dircolors ~/.dircolors`
+
 
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
