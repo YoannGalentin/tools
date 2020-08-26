@@ -17,7 +17,7 @@ export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
 # dircolors
-eval `dircolors ~/.dircolors/dircolors-solarized/dircolors.256dark`
+eval `dircolors ~/.dircolors/dircolors.256dark`
 
 # WSL1
 export DOCKER_HOST=tcp://localhost:2375

@@ -73,7 +73,10 @@ if [[ "$count" -eq "0" ]]; then
   echo "ZSH - use custom zshrc"
   echo
   cp zshrc-config.sh ~/zshrc-config.sh
-  echo "source ~/zshrc-config.sh" > ~/.zshrc
+  
+  echo "" >> ~/.zshrc
+  echo "# ZSH Config" >> ~/.zshrc
+  echo "source ~/zshrc-config.sh" >> ~/.zshrc
 
   if [ ! -f ~/.ssh/id_rsa ]; then
     echo
