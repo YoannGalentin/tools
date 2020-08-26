@@ -1,4 +1,4 @@
-REM copier et coller le contneu du fichier dans une console
+REM copier et coller le contenu du fichier dans une console
 git clone https://github.com/powerline/fonts.git --depth=1
 cd fonts
 Set-ExecutionPolicy Bypass

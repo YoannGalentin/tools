@@ -40,6 +40,6 @@ choco install adobereader -y
 REM Docker
 choco install docker-desktop -y
 
-# Rem powertoys
+Rem powertoys
 choco install dotnetcore -y
 choco install powertoys -y
