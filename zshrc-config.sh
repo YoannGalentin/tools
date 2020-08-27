@@ -27,3 +27,6 @@ alias dci='git duet-commit'
 alias drv='git duet-revert'
 alias dmg='git duet-merge'
 alias drb="git rebase -i --exec 'git duet-commit --amend --reset-author'"
+
+# use zsh syntax highlightning
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

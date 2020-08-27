@@ -69,6 +69,8 @@ if [[ "$count" -eq "0" ]]; then
 
   git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
+  sudo apt-get install zsh-syntax-highlighting
+
   echo
   echo "ZSH - use custom zshrc"
   echo
