@@ -19,6 +19,20 @@ echo "WSL - Fonts"
 echo
 sudo apt-get install -y powerline fonts-powerline
 
+# Java
+echo
+echo "Java install"
+echo
+# fix apt-key add for WSL Ubuntu
+sudo apt remove -y gpg
+sudo apt install -y gnupg1
+wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -
+sudo apt-get install -y  software-properties-common
+# use adoptopenjdk
+sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
+sudo apt update
+sudo apt-get install -y adoptopenjdk-8-hotspot
+
 # NVM
 echo
 echo "NVM install"
@@ -75,7 +89,7 @@ if [[ "$count" -eq "0" ]]; then
   echo "ZSH - use custom zshrc"
   echo
   cp zshrc-config.sh ~/zshrc-config.sh
-  
+
   echo "" >> ~/.zshrc
   echo "# ZSH Config" >> ~/.zshrc
   echo "source ~/zshrc-config.sh" >> ~/.zshrc
